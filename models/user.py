@@ -10,3 +10,4 @@ class User(db.Model, UserMixin):
         db.String(80),
         nullable=False,
     )
+    role = db.Column(db.String(80), nullable=False, default="user")
